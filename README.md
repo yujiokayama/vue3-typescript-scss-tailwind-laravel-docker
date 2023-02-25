@@ -23,7 +23,7 @@ docker compose exec app bash
 ### Laravel9.1 以降をインストール
 
 ```bash
-composer create-project --prefer-dist "laravel/laravel=9.\*" .
+composer create-project --prefer-dist laravel/laravel . "9.*"
 ```
 
 ※git clone 後は`composer install`
