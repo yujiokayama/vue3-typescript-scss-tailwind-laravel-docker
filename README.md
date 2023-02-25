@@ -223,5 +223,3 @@ app.mount("#app");
 
 </html>
 ```
-# vue3-typescript-scss-tailwind-laravel-docker
-# vue3-typescript-scss-tailwind-laravel-docker
