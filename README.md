@@ -26,16 +26,34 @@ docker compose exec app bash
 composer create-project --prefer-dist "laravel/laravel=9.\*" .
 ```
 
+※git clone 後は`composer install`
+
+```bash
+composer install
+```
+
 ### Laravel の.env をコピーしておく
 
 ```bash
 cp .env .env.example
 ```
 
+※git clone 後は`cp .env.example .env `
+
+```bash
+cp .env.example .env
+```
+
 ### vite、vue をインストール
 
 ```bash
 npm i @vitejs/plugin-vue vue
+```
+
+※git clone 後は`npm i`
+
+```bash
+npm i
 ```
 
 ### sass を導入する
@@ -222,4 +240,15 @@ app.mount("#app");
 </body>
 
 </html>
+```
+
+### route を修正する
+
+/routes/web.php
+
+```top.blade.php```へrenameする例
+```php
+Route::get('/', function () {
+    return view('top');
+});
 ```
